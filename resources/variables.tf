@@ -35,3 +35,4 @@ resource "aws_cloudwatch_metric_alarm" "monthly_cost" {
   
 }
 
+
