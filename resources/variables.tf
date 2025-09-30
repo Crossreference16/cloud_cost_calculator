@@ -36,3 +36,13 @@ resource "aws_cloudwatch_metric_alarm" "monthly_cost" {
 }
 
 
+variable "alert_email" {
+  type = string
+  description = "The email address to receive cost alerts."
+}
+
+variable "cost_threshold" {
+  type        = number
+  description = "The AWS threshold for monthly cost alerts."
+  default     = 5 // Default threshold is 5 units of the specified currency
+}
