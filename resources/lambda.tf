@@ -1,6 +1,6 @@
 resource "aws_lambda_function" "weekly_report" {
   function_name = "weekly_cost_report"
-  runtime = python3.11
+  runtime = "python3.11"
   handler = "lambda_function.lambda_handler"
   filename = "lambda/function.zip"
   role = aws_iam_role.lambda_exec.arn
