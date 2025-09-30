@@ -11,7 +11,7 @@ output "s3_dashboard_url" {
 resource "aws_s3_object" "index" {
   bucket       = aws_s3_bucket.cost-dashboard.bucket
   key          = "index.html"
-  source       = "website/index.html" # path to my local index.html
+  source       = "index.html" # path to my local index.html
   content_type = "text/html"
   acl          = "public-read"
 }
