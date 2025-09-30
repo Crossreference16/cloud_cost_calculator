@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "dashboard" {  
-  bucket = "dashboard-bucket"
+  bucket = "dashboard-bucket-khalil-12345"
   // S3 bucket for storing the dashboard
 }
 
