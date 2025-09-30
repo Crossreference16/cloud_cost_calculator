@@ -29,3 +29,29 @@ resource "aws_lambda_permission" "allow_cloudwatch" {
     source_arn = aws_cloudwatch_event_rule.weekly_schedule.arn
     // Permission for CloudWatch to invoke the Lambda function
 } 
+
+
+
+resource "aws_iam_role" "lambda_exec" {
+    name = "lambda_exec_role" // IAM role for Lambda execution
+    assume_role_policy = jsonencode({
+        Version = "2012-10-17" 
+        Statement = [
+            {
+                Action = "sts:AssumeRole"
+                Principal = {
+                    Service = "lambda.amazonaws.com"
+                }
+                Effect = "Allow"
+                Sid = ""
+            }// this policy allows the Lambda service to assume this role
+        ]
+    })// this whole block is the trust policy
+}
+
+resource "aws_iam_role_policy_attachment" "lambda_exec_attach" {
+    role = aws_iam_role.lambda_exec.name
+    policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+    // this attachment gives the Lambda function basic execution permissions (like writing logs to CloudWatch)
+  
+}
