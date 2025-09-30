@@ -13,5 +13,4 @@ resource "aws_s3_object" "index" {
   key          = "index.html"
   source       = "index.html" # path to my local index.html
   content_type = "text/html"
-  acl          = "public-read"
 }
