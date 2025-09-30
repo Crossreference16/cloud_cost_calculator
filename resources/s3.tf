@@ -1,10 +1,10 @@
-resource "aws_s3_bucket" "dashboard" {  
+resource "aws_s3_bucket" "cost-dashboard" {  
   bucket = "dashboard-bucket-khalil-12345"
   // S3 bucket for storing the dashboard
 }
 
-resource "aws_s3_bucket_website_configuration" "dashboard" {
-  bucket = aws_s3_bucket.dashboard.id
+resource "aws_s3_bucket_website_configuration" "cost-dashboard" {
+  bucket = aws_s3_bucket.cost-dashboard.id
 
   index_document {
     suffix = "index.html"
