@@ -98,6 +98,7 @@ The Cloud Cost Dashboard is an automated AWS cost monitoring and reporting solut
 - Refactor code for even greater modularity and reusability.
 - Write more detailed documentation and usage examples.
 - Package as a deployable module for easier reuse in other projects.
+
 ## Notes & Customization
 
 - All resources are created in `us-east-1`.
@@ -109,7 +110,9 @@ The Cloud Cost Dashboard is an automated AWS cost monitoring and reporting solut
 ---
 
 This project is open for review, feedback, and further development. If you’d like to see more features or have suggestions, feel free to reach out or fork the repo! 
+
 If you want to use this for your own AWS account, go for it! Tweak it, break it, improve it, whatever you like. Enjoy!
+
 ---
 
 
