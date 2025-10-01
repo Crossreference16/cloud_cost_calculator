@@ -1,5 +1,5 @@
 
-# Cloud Cost Dashboard
+# Cloud Cost Calculator
 
 ## Project Overview
 
@@ -80,12 +80,24 @@ The Cloud Cost Dashboard is an automated AWS cost monitoring and reporting solut
 
 - Infrastructure as Code (Terraform)
 - AWS resource provisioning and automation (S3, Lambda, CloudWatch, SNS, IAM)
-- Serverless architecture (AWS Lambda)
+- Serverless architecture (Lambda)
 - Cloud cost management and alerting (CloudWatch, SNS)
-- IAM policy and security configuration (IAM roles and permissions)
+- IAM policy and security configuration (IAM)
 - S3 static website hosting (S3)
 - Python scripting for AWS automation (Lambda)
 
+## Future Work
+
+- Add automated tests for the Lambda function and Terraform modules.
+- Integrate CI/CD pipelines (e.g., GitHub Actions) for automated deployment and validation.
+- Expand dashboard features to show cost breakdowns by service, tag, or account.
+- Add support for multi-region or multi-account AWS setups.
+- Implement user authentication for the dashboard (optional, for private cost visibility).
+- Provide historical cost trends and visualizations (charts/graphs).
+- Add Slack or Teams integration for cost alerts in addition to email.
+- Refactor code for even greater modularity and reusability.
+- Write more detailed documentation and usage examples.
+- Package as a deployable module for easier reuse in other projects.
 ## Notes & Customization
 
 - All resources are created in `us-east-1`.
@@ -96,8 +108,8 @@ The Cloud Cost Dashboard is an automated AWS cost monitoring and reporting solut
 
 ---
 
-This project is open for review, feedback, and further development. If you’d like to see more features or have suggestions, feel free to reach out or fork the repo!
-
+This project is open for review, feedback, and further development. If you’d like to see more features or have suggestions, feel free to reach out or fork the repo! 
+If you want to use this for your own AWS account, go for it! Tweak it, break it, improve it, whatever you like. Enjoy!
 ---
 
-If you want to use this for your own AWS account, go for it! Tweak it, break it, improve it, do with it whatever you like. Enjoy!
+
