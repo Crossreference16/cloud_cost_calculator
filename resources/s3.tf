@@ -17,17 +17,6 @@ resource "aws_s3_bucket_website_configuration" "cost-dashboard" {
   }
 }
 
-resource "aws_s3_bucket_public_access_block" "dashboard" {
-  bucket = aws_s3_bucket.cost-dashboard.id
-
-  block_public_acls       = false
-  block_public_policy     = false
-  ignore_public_acls      = false
-  restrict_public_buckets = false
-  // This configuration allows public access to the S3 bucket
-}
-
-
 resource "aws_s3_bucket_policy" "public_read" {
   bucket = aws_s3_bucket.cost-dashboard.id
 
@@ -44,4 +33,17 @@ resource "aws_s3_bucket_policy" "public_read" {
   })
   // This policy makes the S3 bucket publicly readable
 }
+
+resource "aws_s3_bucket_public_access_block" "dashboard" {
+  bucket = aws_s3_bucket.cost-dashboard.id
+
+  block_public_acls       = false
+  block_public_policy     = false
+  ignore_public_acls      = false
+  restrict_public_buckets = false
+  // This configuration allows public access to the S3 bucket
+}
+
+
+
 
