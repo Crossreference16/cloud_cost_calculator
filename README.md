@@ -79,12 +79,12 @@ The Cloud Cost Dashboard is an automated AWS cost monitoring and reporting solut
 ## Skills Demonstrated
 
 - Infrastructure as Code (Terraform)
-- AWS resource provisioning and automation
-- Serverless architecture (Lambda)
-- Cloud cost management and alerting
-- IAM policy and security configuration
-- S3 static website hosting
-- Python scripting for AWS automation
+- AWS resource provisioning and automation (S3, Lambda, CloudWatch, SNS, IAM)
+- Serverless architecture (AWS Lambda)
+- Cloud cost management and alerting (CloudWatch, SNS)
+- IAM policy and security configuration (IAM roles and permissions)
+- S3 static website hosting (S3)
+- Python scripting for AWS automation (Lambda)
 
 ## Notes & Customization
 
