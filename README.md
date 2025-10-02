@@ -1,5 +1,5 @@
 
-# Cloud Cost Calculator
+# Cloud Cost Dashboard
 
 ## Project Overview
 
