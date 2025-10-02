@@ -16,6 +16,7 @@ def lambda_handler(event, context):
             'End': end.strftime('%Y-%m-%d')
         },
         Granularity='DAILY', # changed from WEEKLY to DAILY because WEEKLY is not supported by Granularity. Only MONTHLY, DAILY AND HOURLY are supported.
+        Metrics=['UnblendedCost']
         GroupBy=[{'Type': 'DIMENSION', 'Key': 'SERVICE'}]
     )# Fetches cost data from AWS Cost Explorer
 
