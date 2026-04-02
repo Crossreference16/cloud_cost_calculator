@@ -6,7 +6,7 @@
 The Cloud Cost Dashboard is an automated AWS cost monitoring and reporting solution, designed to provide real-time visibility into cloud spending. The project provisions all resources using Terraform and leverages AWS managed services to deliver a public dashboard of AWS costs, along with automated cost alerts. This project demonstrates practical skills in Infrastructure as Code, serverless automation, and cloud cost management. This project can used by businesses in order for them to track cloud spending.
 
 **Key objectives:**
-- Automate cloud resource provisioning and monitoring via Terraformm
+- Automate cloud resource provisioning and monitoring via Terraform
 - Integrate AWS Lambda, S3, IAM, CloudWatch, and SNS
 - Build a real-world solution for cost visibility and alerting
 
